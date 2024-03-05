@@ -12,7 +12,10 @@
         return;
       }
       const decodedUrl = atob(url);
-      window.location.href = decodedUrl;
+      const link = document.createElement("a");
+      link.href = decodedUrl;
+      link.target = "_top";
+      link.click();
     }
     redirect();
   </script>
