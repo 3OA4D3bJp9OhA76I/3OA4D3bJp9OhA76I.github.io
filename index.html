@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirector</title>
+</head>
+<body>
+  <script>
+    function redirect() {
+      const url = new URLSearchParams(window.location.search).get("url");
+      const decodedUrl = atob(url);
+      window.location.href = decodedUrl;
+    }
+    redirect();
+  </script>
+</body>
+</html>
