@@ -7,6 +7,10 @@
   <script>
     function redirect() {
       const url = new URLSearchParams(window.location.search).get("url");
+      if (!url) {
+        console.error("Missing url parameter");
+        return;
+      }
       const decodedUrl = atob(url);
       window.location.href = decodedUrl;
     }
