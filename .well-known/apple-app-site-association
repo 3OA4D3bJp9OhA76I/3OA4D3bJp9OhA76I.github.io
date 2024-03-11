@@ -3,7 +3,7 @@
         "apps": [],
         "details": [{
             "appID": "6W6V5C6R34.sk.posam.makro.esign",
-            "paths": ["/"]
+            "paths": ["/", "/*"]
         }]
     }
 }
